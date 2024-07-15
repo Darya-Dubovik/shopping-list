@@ -11,17 +11,15 @@ input.addEventListener('keyup', function(e) {
 
     const newPoint = document.createElement('p');
     newPoint.classList.add('item');
+    
+    newPoint.addEventListener('click', function () {
+    newPoint.classList.toggle('done');
+    })
+    
     newPoint.textContent = pointText;
 
     if (pointText != '') {
         pointContainer.append(newPoint);
-    }
-  
-    const elements = document.querySelectorAll('.item'); 
-    for (let item of elements) {
-        item.addEventListener('click', function () {
-        item.classList.toggle('done');
-        })
     }
 
     input.value = '';
