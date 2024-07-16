@@ -1,7 +1,5 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
 
-const input = document.querySelector('#input');
-const items = document.querySelector('#item');
 const pointContainer = document.querySelector('.groceries');
 
 input.addEventListener('keyup', function(e) {
