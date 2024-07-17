@@ -1,6 +1,6 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
 
-const pointContainer = document.querySelector('.groceries');
+const elements = document.querySelector('#items');
 
 input.addEventListener('keyup', function(e) {
     if (e.keyCode === 13) {
@@ -17,7 +17,7 @@ input.addEventListener('keyup', function(e) {
     newPoint.textContent = pointText;
 
     if (pointText != '') {
-        pointContainer.append(newPoint);
+        elements.append(newPoint);
     }
 
     input.value = '';
