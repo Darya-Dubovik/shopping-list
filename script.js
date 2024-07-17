@@ -1,5 +1,6 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
 
+const input = document.querySelector('#input');
 const elements = document.querySelector('#items');
 
 input.addEventListener('keyup', function(e) {
